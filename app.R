@@ -10,11 +10,14 @@
 library(shiny)
 library(dplyr)
 library(leaflet)
+library(data.table)
 # Define UI for application that draws a histogram
 if (interactive()){
   library(shiny)
   library(shiny.semantic)
-  shipdata<-read.csv("/Users/mehnazmaharin/Downloads/ships.csv", header=TRUE)
+  shipdata<-fread("/Users/mehnazmaharin/Documents/R-Semantic-Dahsboard-Appsilon/ships.csv",
+                     header=TRUE)
+  #NOTE from MM: ensure that you change above path and unzip the zipped data
   vessel_type <- shipdata %>% pull(ship_type) %>% unique
   vessel_name <- shipdata %>% pull(SHIPNAME) %>% unique
   
