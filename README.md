@@ -11,7 +11,7 @@ At fisrt I filtered the data table using ship type and ship name through user in
 ```
 I used lag() function to find out the two points of lattitude,longitude and their distance .The data manupulation operation is described bellow:
 ```javascript
- map_event()%>%
+ map_distance<-map_event()%>%
           group_by(SHIPNAME)%>%
           mutate(lag_LAT = lag(LAT), lag_LON = lag(LON)) %>% 
           mutate(Distance=distHaversine(cbind(lag_LAT, lag_LON),cbind(LON,LAT)))%>%
