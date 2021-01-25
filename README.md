@@ -20,4 +20,4 @@ I used lag() function to find out the two points of lattitude,longitude and thei
 ```
 I mentioned the distance and added polyline for the inital and final position of the ship.
 
-![Alt Text](https://github.com/mehnazmaharin/R-Semantic-Dahsboard-Appsilon/blob/main/Screen%20Shot%202021-01-24%20at%2011.51.06%20PM.png)
+![Alt Text]()
