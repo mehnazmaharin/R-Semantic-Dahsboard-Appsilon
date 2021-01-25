@@ -2,7 +2,7 @@
 
 Dashboard Link : [Shiny Semantic Dashboard](https://mehnazmaharin.shinyapps.io/R-Semantic-Dashboard-Appsilon/)
 
-####Data Manupulation
+######Data Manupulation
 Finding highest distance between two consequtive points:
 At fisrt I filtered the data table using ship type and ship name through user input using the following code:
 ```R
